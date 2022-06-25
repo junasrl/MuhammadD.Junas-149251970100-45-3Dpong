@@ -11,6 +11,6 @@ public class WinnerPreview : MonoBehaviour
 
     private void Update()
     {
-        Winner.text = "The Winner is" + manager.winner;
+        Winner.text = "The Winner is " + manager.winner + "!";
     }
 }

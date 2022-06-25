@@ -14,7 +14,7 @@ public class BallSpawnManager : MonoBehaviour
     public GameObject BallTemplate;
 
     private Rigidbody rig;
-    private List<GameObject> BallList;
+    public List<GameObject> BallList;
     // Start is called before the first frame update
 
     public void RemoveBall(GameObject ball)

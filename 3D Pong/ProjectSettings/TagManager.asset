@@ -11,6 +11,7 @@ TagManager:
   - P3
   - P4
   - Goal
+  - NonactivePaddle
   layers:
   - Default
   - TransparentFX

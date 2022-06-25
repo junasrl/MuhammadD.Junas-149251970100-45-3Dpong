@@ -7,6 +7,7 @@ public class SceneControl : MonoBehaviour
 {
     public void PlayGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Game");
         Debug.Log("Created by Muhammad Destamal Junas - 149251970100-45");
     }
@@ -23,6 +24,6 @@ public class SceneControl : MonoBehaviour
     }
     public void Exit()
     {
-
+        Application.Quit();
     }
 }

@@ -12,6 +12,8 @@ public class ScoreControl : MonoBehaviour
 
     public ScoreManager manager;
 
+    
+
     private void Update()
     {
         scorep1.text = manager.p1score.ToString();

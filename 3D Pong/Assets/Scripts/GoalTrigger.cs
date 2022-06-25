@@ -8,8 +8,6 @@ public class GoalTrigger : MonoBehaviour
     public GameObject ball;
     public ScoreManager manager;
 
-    public BallSpawnManager bm;
-
 
     private void OnTriggerEnter(Collider other) 
     {
@@ -37,7 +35,7 @@ public class GoalTrigger : MonoBehaviour
                 manager.addP4Score(1);
             }
             
-            Destroy(other.gameObject);
+            
         }
     }
 }

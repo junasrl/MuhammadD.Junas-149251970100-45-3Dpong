@@ -32,6 +32,21 @@ public class BallControl : MonoBehaviour
             rig.velocity *= 1.5f;
         }
 
+        else if(collider_tag == "NonactivePaddle")
+        {
+            rig.velocity *= 0.7f;
+        }
+
+    }
+
+    private void OnTriggerEnter(Collider collision) {
+        if (collision.gameObject.tag == "P1" ||
+            collision.gameObject.tag == "P2" || 
+            collision.gameObject.tag == "P3" || 
+            collision.gameObject.tag == "P4")
+        {
+            bm.RemoveBall(gameObject);
+        }
     }
 
     // Update is called once per frame
